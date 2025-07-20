@@ -1,0 +1,162 @@
+:root {
+  --bg: #f4f0e5;
+  --text-1: #542f0c;
+  --text-2: #fafafa;
+  --text-3: #de8e37;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+p, span, a {
+  font-family: "Roboto", sans-serif;
+}
+
+header, #sobre, .container, footer {
+  max-width: 1200px;
+  /* border: 1px solid; */
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+/* HEADER */
+
+.logo {
+  width: 200px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.menu li a {
+  color: var(--text-1);
+}
+
+.menu li {
+  transition: all 0.5s ease;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.menu li:hover a {
+  padding: 20px 0;
+  font-weight: 500;
+  border-bottom: 2px solid var(--text-1);
+}
+
+/* SOBRE */
+
+#sobre {
+  margin-top: 30px;
+  border-top: 3px solid var(--text-3);
+}
+
+.text-sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text-sobre h1 {
+  font-size: 30px;
+  line-height: 28px;
+}
+
+.text-sobre h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  color: var(--text-3);
+}
+
+/* PRODUTOS */
+#produtos {
+  background-color: var(--text-3);
+  color: var(--text-2);
+}
+
+.container h3 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.produtos-items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.produtos-items article {
+  transition: all 0.5s ease;
+  padding: 30px 20px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.produtos-items article h4 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.produtos-items article p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.produtos-items article:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  scale: 1.02;
+}
+
+/* FOOTER */
+#contato h3 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-item p, .info-item span  {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.info-item span {
+  font-weight: 700;
+}
